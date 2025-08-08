@@ -13,16 +13,12 @@ const Header = () => {
                     <p>Transformo ideas en interfaces elegantes con Angular. <br />Desarrollo web fullstack con enfoque visual,<br />soluciones ágiles y experiencias que conectan. ✨</p>
                     <div className="btn">
                         {/* Enlace interno que usa HashLink para navegar a una sección de la página */}
-                        <div className="btn-item">
-                            <HashLink to="#portfolio">Proyectos</HashLink>
-                        </div>
+                        <HashLink to="#portfolio">Proyectos</HashLink>
                         
                         {/* Enlace externo a LinkedIn, se mantiene como <a> */}
-                        <div className="btn-item">
-                            <a href="https://www.linkedin.com/in/yaretzi-a-briones/" target="_blank" rel="noopener noreferrer">
-                                LinkedIn
-                            </a>
-                        </div>
+                        <a href="https://www.linkedin.com/in/yaretzi-a-briones/" target="_blank" rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
                     </div>  
                 </div>
                 <div className="img">

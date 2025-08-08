@@ -51,11 +51,10 @@ header .content .text-content .btn {
     display: flex;
     margin: 1.5rem 0;
     gap: 2rem;
-    transition: 0.5s ease-in-out;
 }
 
-header .content .text-content .btn .btn-item,
-header .content .text-content .btn .btn-item:nth-child(2):hover {
+header .content .text-content .btn a,
+header .content .text-content .btn a:nth-child(2):hover {
     display: inline-block;
     padding: 1rem 2rem;
     background: var(--blue-clr);
@@ -63,8 +62,8 @@ header .content .text-content .btn .btn-item:nth-child(2):hover {
     color: var(--white-clr);
 }
 
-header .content .text-content .btn .btn-item:hover,
-header .content .text-content .btn .btn-item:nth-child(2) {
+header .content .text-content .btn a:hover,
+header .content .text-content .btn a:nth-child(2) {
     background: transparent;
     border: 1px solid var(--blue-clr);
     color: var(--blue-clr);
