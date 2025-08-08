@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;600;800&family=Playfair+Display:ital,wght@0,600;1,500&family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --blue-clr: #1F2A44;
+  --white-clr: #FFFFFF;
+  --black-clr: #25282B;
+  --text-clr: #828282;
+}
+
+.text-white {
+  color: var(--white-clr);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #F9FAFF;
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  color: var(--text-clr);
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--black-clr); 
+  font-size: 1.5rem;
+  transition: 0.4s ease-in-out;
+}
+
+span{
+  font-size: 1.2rem;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  color: var(--black-clr);
+  /* font-family: 'Merienda', cursive; */
+  font-family: "Playfair Display", serif;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 10rem 0;
+  text-align: center;
+}
+
+section h2{
+  font-size: 4rem;
+  padding: 2rem 0;
+  position: relative;
+  display: inline-block;
+}
+
+
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  h3 {
+    font-size: 2.4rem;
+  }
+
+  p, a {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+
+  section {
+    padding: 6rem 0;
+  }
+
+  section h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Móviles (≤ 480px) */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 2rem;
+  }
+
+  p, a {
+    font-size: 1.2rem;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  section h2 {
+    font-size: 2.4rem;
+  }
+}

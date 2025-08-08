@@ -1,0 +1,194 @@
+/* Estilos generales */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Asegura la alineación vertical */
+    padding: 1rem 0;
+    position: relative; /* Necesario para el posicionamiento del menú desplegable */
+    z-index: 100; /* Asegura que la barra de navegación esté encima de todo */
+}
+
+.navbar .logo h3 {
+    font-size: 2.2rem;
+}
+
+.navbar nav ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.navbar nav ul li a:hover {
+    color: var(--text-clr);
+}
+
+/* Header */
+header {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+header .content {
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+
+header .content .text-content {
+    flex: 50%;
+}
+
+header .content .text-content h1 {
+    font-size: 6.4rem;
+}
+
+header .content .text-content p {
+    margin: 2rem 0;
+}
+
+header .content .text-content .btn {
+    display: flex;
+    margin: 1.5rem 0;
+    gap: 2rem;
+}
+
+header .content .text-content .btn a,
+header .content .text-content .btn a:nth-child(2):hover {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--blue-clr);
+    border: 1px solid var(--blue-clr);
+    color: var(--white-clr);
+}
+
+header .content .text-content .btn a:hover,
+header .content .text-content .btn a:nth-child(2) {
+    background: transparent;
+    border: 1px solid var(--blue-clr);
+    color: var(--blue-clr);
+}
+
+header .content .img {
+    flex: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+header .content .img img {
+    right: 0;
+}
+
+/* ---------------------------------------------------- */
+/* Estilos para el Menú de Hamburguesa y Animaciones */
+/* ---------------------------------------------------- */
+
+/* Oculta el botón de hamburguesa en pantallas grandes */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 200; /* Asegura que el botón esté por encima del menú */
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out; /* Animación para las barras del icono */
+    background-color: var(--text-clr);
+}
+
+/* Media Query para pantallas más pequeñas (móviles) */
+@media (max-width: 1024px) {
+    /* Muestra el botón de hamburguesa */
+    .hamburger {
+        display: block;
+    }
+
+    /* Oculta el menú por defecto y lo prepara para el despliegue */
+    .navbar nav {
+        position: fixed; /* Ocupa toda la ventana */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9); /* Fondo semi-transparente */
+        backdrop-filter: blur(5px); /* Efecto de fondo borroso */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%); /* Oculta el menú a la derecha */
+        transition: transform 0.3s ease-in-out;
+        z-index: 150;
+    }
+
+    .navbar nav ul {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar nav ul li a {
+        font-size: 2rem;
+        transition: color 0.3s;
+    }
+
+    .navbar nav ul li a:hover {
+        color: var(--blue-clr);
+    }
+    
+    /* Muestra el menú cuando tiene la clase 'active' */
+    .navbar nav.active {
+        transform: translateX(0); /* Desliza el menú para mostrarlo */
+    }
+
+    /* Animación para convertir el icono de hamburguesa en una 'X' */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    header .content .text-content .btn{
+        justify-content: center;
+    }
+
+    /* Ajustes para el resto de la página */
+    header .content {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    header .content .text-content {
+        flex: 100%;
+    }
+
+    header .content .text-content h1 {
+        font-size: 4rem;
+    }
+
+    header .content .img {
+        position: static;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    header .content .img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container.navbar{
+        padding: 2rem;
+    }
+}
