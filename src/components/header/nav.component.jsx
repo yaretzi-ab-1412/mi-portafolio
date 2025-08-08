@@ -1,4 +1,5 @@
 import './style.css';
+import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import { useState } from 'react'; // Importa useState
 
@@ -23,9 +24,20 @@ const Navbar = () => {
             {/* 4. La clase 'active' se agrega si isMenuOpen es true */}
             <nav className={isMenuOpen ? 'active' : ''}>
                 <ul>
-                    <li><a className='text-white' href="/" onClick={toggleMenu}>Inicio</a></li>
-                    <li><a className='text-white' href="/about" onClick={toggleMenu}>Sobre mí</a></li>
                     <li>
+                        {/* Cambiado de <a> a <Link> y href a to */}
+                        <Link className='text-white' to="/" onClick={toggleMenu}>
+                            Inicio
+                        </Link>
+                    </li>
+                    <li>
+                        {/* Cambiado de <a> a <Link> y href a to */}
+                        <Link className='text-white' to="/about" onClick={toggleMenu}>
+                            Sobre mí
+                        </Link>
+                    </li>
+                    <li>
+                        {/* Este ya estaba correcto */}
                         <HashLink className='text-white' smooth to="/#portfolio" onClick={toggleMenu}>
                             Portafolio
                         </HashLink>
