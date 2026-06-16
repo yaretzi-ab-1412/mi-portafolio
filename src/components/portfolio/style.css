@@ -3,14 +3,21 @@
     margin: 0 auto;
 }
 
+.portfolio-intro {
+    max-width: 850px;
+    margin: 0 auto 3rem;
+}
+
 .portfolio-item {
     display: flex;
     justify-content: space-between;
-    height: 400px;
+    min-height: 400px;
     margin: 2rem 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 20px;
     width: 100%;
+    overflow: hidden;
+    background: var(--white-clr);
 }
 
 .portfolio-item .text{
@@ -19,7 +26,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    padding: 0 2rem;
+    padding: 3rem;
     flex: 50%;
 }
 
@@ -27,7 +34,32 @@
     order: 1;
 }
 
-.portfolio-item a{
+.project-category {
+    color: var(--blue-clr);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 0 0 2rem;
+}
+
+.tech-list span {
+    font-size: 1.2rem;
+    color: var(--blue-clr);
+    border: 1px solid rgba(31, 42, 68, 0.18);
+    border-radius: 999px;
+    padding: 0.5rem 0.9rem;
+    background: #F9FAFF;
+}
+
+.portfolio-item a,
+.private-project{
     padding: 8px 24px;
     border-radius: 24px;
     font-weight: bold;
@@ -36,13 +68,18 @@
     transition: 0.4s ease-in-out;
 }
 
+.private-project {
+    color: var(--blue-clr);
+    font-size: 1.3rem;
+}
+
 .portfolio-item a:hover{
     background: var(--blue-clr);
     color: var(--white-clr);
 }
 
 .portfolio-item p{
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .portfolio-item .img{
@@ -79,7 +116,7 @@
     }
 
     .portfolio-item:nth-child(odd) .text {
-        order: 0; /* Elimina el cambio de orden en pantallas pequeñas */
+        order: 0;
     }
 }
 
@@ -89,12 +126,17 @@
         text-align: center;
     }
 
+    .tech-list {
+        justify-content: center;
+    }
+
     .portfolio-item p {
         margin: 1rem 0;
         font-size: 1.4rem;
     }
 
-    .portfolio-item a {
+    .portfolio-item a,
+    .private-project {
         padding: 10px 20px;
         font-size: 1rem;
         width: 100%;

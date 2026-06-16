@@ -14,12 +14,17 @@ const AboutPage=()=>{
                     <div className="text">
                         <h3>Sobre mí</h3>
                         <p>
-                            Soy ingeniera en tecnología de software con experiencia en el desarrollo de aplicaciones web seguras, funcionales y escalables, tanto en el sector público como privado. Actualmente me desempeño colaborando en el análisis, diseño y construcción de sistemas estratégicos utilizando tecnologías como Angular, .NET Core y SQL, Oracle.
+                            Soy desarrolladora web con experiencia en WordPress, WooCommerce, desarrollo frontend y creación de soluciones web personalizadas. He trabajado en sitios corporativos, tiendas en línea, personalización de temas, integración de APIs y optimización de procesos para ecommerce.
                         </p>
-                        <p>He participado en proyectos de análisis espacial (Leaflet, Turf.js, PostGIS), desarrollo de SPAs, APIs REST y mejoras en plataformas de ecommerce. Me caracterizo por ser autodidacta, con pensamiento lógico, atención al detalle y compromiso con los resultados.</p>
+                        <p>
+                            Además cuento con experiencia en Angular, .NET Core, SQL, Oracle y AS400/DB2, lo que me permite entender proyectos de forma integral, desde la interfaz hasta la lógica backend, bases de datos, seguridad y despliegue.
+                        </p>
+                        <p>
+                            Me caracterizo por ser autodidacta, detallista y orientada a entregar soluciones funcionales, claras y mantenibles.
+                        </p>
                     </div>
                     <div className="img">
-                        <img src={aboutImg} alt="" />
+                        <img src={aboutImg} alt="Yaretzi Arriaga" />
                     </div>
                 </div>
             </div>

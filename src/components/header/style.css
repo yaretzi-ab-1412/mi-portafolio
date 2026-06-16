@@ -45,6 +45,7 @@ header .content .text-content h1 {
 
 header .content .text-content p {
     margin: 2rem 0;
+    width: 50%;
 }
 
 header .content .text-content .btn {
@@ -173,6 +174,10 @@ header .content .img img {
         flex: 100%;
     }
 
+    header .content .text-content p {
+        width: 100%;
+    }
+
     header .content .text-content h1 {
         font-size: 4rem;
     }
@@ -190,5 +195,29 @@ header .content .img img {
 
     .container.navbar{
         padding: 2rem;
+    }
+}
+.skills-line {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin: 1.5rem 0 0;
+    max-width: 620px;
+}
+
+.skills-line span {
+    border: 1px solid rgba(31, 42, 68, 0.18);
+    border-radius: 999px;
+    padding: 0.6rem 1rem;
+    background: rgba(255, 255, 255, 0.65);
+    color: var(--blue-clr);
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .skills-line {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

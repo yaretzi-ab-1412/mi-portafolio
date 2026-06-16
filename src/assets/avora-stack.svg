@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f9faff"/>
+  <rect x="170" y="150" width="860" height="500" rx="34" fill="#1F2A44"/>
+  <path d="M320 480 L460 250 L600 480 L740 250 L880 480" fill="none" stroke="#ffffff" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="305" y="590" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff">AVORA STACK</text>
+</svg>

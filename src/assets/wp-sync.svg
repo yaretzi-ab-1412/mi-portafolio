@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f9faff"/>
+  <circle cx="600" cy="400" r="250" fill="#1F2A44"/>
+  <circle cx="430" cy="300" r="74" fill="#ffffff"/>
+  <circle cx="770" cy="300" r="74" fill="#ffffff"/>
+  <circle cx="600" cy="540" r="74" fill="#ffffff"/>
+  <path d="M495 315 C560 250 645 250 708 315" fill="none" stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <path d="M745 380 C760 470 705 535 620 548" fill="none" stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <path d="M580 548 C495 535 440 470 455 380" fill="none" stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <text x="240" y="715" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#1F2A44">WooCommerce Sync Plugin</text>
+</svg>
